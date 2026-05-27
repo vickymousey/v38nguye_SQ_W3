@@ -364,6 +364,12 @@ function endGame(winnerLabel) {
 // Displayed before the game begins.
 // ------------------------------------------------------------
 function drawStartScreen() {
+  // Black box background
+  fill(0, 0, 0, 220); // mostly opaque black
+  noStroke();
+  rect(width / 2 - 260, height / 2 - 120, 520, 260, 12);
+  // (x, y, w, h, rounded corners)
+
   // Title
   fill(255);
   textAlign(CENTER);
